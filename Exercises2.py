@@ -115,7 +115,7 @@ Solution:
 #%%
 def average(numlis):
     sum = 0
-    for n in range(0,len(numlis),1):
+    for n in range(0,len(numlis)):
         sum += numlis[n]
     print("The average is",sum/len(numlis),"and it has",len(numlis),"items")
 
@@ -159,7 +159,9 @@ misc_list = ['ball', 3.14, -50, 'university', "course"]
 Solution:
 """
 #%%
-
+def print_list(lis):
+    for list in lis:
+        print(list)
 
 
 #%%
