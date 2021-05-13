@@ -20,7 +20,7 @@ def hello():
 #%%
 def myname():
     print("My name is Bill")
-    
+  
 #%%
 def ourschool():
     print("Coursera is our school")
