@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon May 10 17:21:29 2021
-
-@author: Admin
-"""
-
 # -Exercises1.py *- coding: utf-8 -*-
 
 
@@ -70,7 +63,8 @@ Solution:
 """
 #%%
 def areatriangle(b,h):
- 
+    area = .5*b*h
+    print("Area is",area)
  
 #%%
 """
@@ -125,15 +119,13 @@ celsius_to_fahrenheit(50.)
 Solution:
 """
 #%%
-def celsius_to_fahrenheit(temp):
-
-
-
-
-
+def celsius_to_fahrenheit(temp1):
+    newTemp=(9/5)*temp1+32
+    print("The Celcius temperature",temp1,"is equivalent to",newTemp,"degrees Farenhite")
+    
 #%%
 """
-End solution
+End solution:
 """
 #%%
 
@@ -169,18 +161,18 @@ You live in:  Middletown, CT
 Solution:
 """
 #%%
-def name():
+def name_city():
     """ Input first and last name, combine to one string and print 
         Also, input the city and state and print."""
     fname = input("Enter your first name: ")
     lname = input("Enter your last name: ")
+    city = input("Enter the city you live in: ")
+    state = input("Enter the state you live in: ")
     fullname = fname + " " + lname
+    address = city + " " + state
     
-
-
-
-
     print("Your name is:", fullname)
+    print("You live in:",address)
 
 
 #%%
@@ -264,10 +256,12 @@ Solution:
 """
 #%%
 def absolutevalue(num):
-
-
-
-
+    if num>0:
+        print("The absolute value of",num,"is",num)
+    elif num<0:
+        print("The absolute value of",num,"is",num*-1)
+    else:
+        print("The absolute value of",num,"is",0)    
 
 #%%
 """
@@ -367,6 +361,9 @@ Solution:
 #%%
 
 def inches_to_feet2(inches):
+    feet = inches//12
+    extra_inches = inches%12
+    print(inches,"inches is",feet,"feet and",extra_inches,"inches") 
 
 
 
@@ -405,7 +402,12 @@ Solution:
 """
 #%%
 
-
+def count_down():
+    ct=10
+    while ct>=1:
+        print(ct,end=" ")
+        ct-=1
+    print("BLASTOFF")
 
 
 
@@ -443,9 +445,9 @@ Solution:
 """
 #%%
 def countdown1():
-
-
-
+    for ct in range(10,0,-1):
+        print(ct,end=" ")
+    print("BLASTOFF")
 
 #%%
 """
@@ -462,14 +464,16 @@ it work by using Shift-Enter to insert the function into IPython and reading
 what error it gives or trying to run the function.
 """
 #%%
-def favorite():
+"""def favorite():
     my_toy = input("What is my favorite toy? ")
-     print("Your favorite toy is", my-toy)
+     print("Your favorite toy is", mytoy)"""
 #%%  
 """
 My solution:
 """
-
+def favorite():
+    my_toy = input("What is my favorite toy? ")
+    print("Your favorite toy is", my_toy)
 
 
 
