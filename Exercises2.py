@@ -63,7 +63,7 @@ statements handle various combinations. Some test lists for who_is_there:
 #%%
 alion = ['lion']   
 ld = ['lion','daisy']
-lbf = ['lion','bear','iris']
+lbf = ['lion','bear','iris'] 
 #%%
 """
 The following function illustrates using lists in 'for' loops. Note that the
@@ -114,11 +114,10 @@ Solution:
 """
 #%%
 def average(numlis):
-
-
-
-
-
+    sum = 0
+    for n in range(0,len(numlis),1):
+        sum += numlis[n]
+    print("The average is",sum/len(numlis),"and it has",len(numlis),"items")
 
 #%%
 """
