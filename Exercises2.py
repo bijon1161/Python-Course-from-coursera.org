@@ -239,7 +239,7 @@ def         for     lambda  try
 You'll just get a syntax error:
 """ 
 #%%
-except = 5
+# except = 5
 #%%
 """
 Note: for readability, if you feel that you need to use one of these as a 
@@ -280,11 +280,11 @@ Solution:
 """
 #%%
 
-
-
-
-
-
+print(newEngland[0])
+print(newEngland[1])
+print(newEngland[1][0])
+print(newEngland[1][1])
+        
 
 #%%
 """
