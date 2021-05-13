@@ -104,7 +104,7 @@ are expected to do and shows how the auto-grader expects it to look.
 """
 #%%
 def problem1_1():
-    pass # replace this pass (a do-nothing) statement with your code
+    print("Problem Set 1") # replace this pass (a do-nothing) statement with your code
 
     
 #%%
@@ -116,7 +116,10 @@ numbers x and y on separate lines, the sum printing first.
 """
 #%%
 def problem1_2(x,y):
-    pass # replace this pass (a do-nothing) statement with your code
+    print(x+y)
+    print(x*y)
+    
+    # replace this pass (a do-nothing) statement with your code
 
 
 #%% 
@@ -143,7 +146,10 @@ but be sure this isn't in the submitted function.
 #%%
 def problem1_3(n):
     my_sum = 0
-    pass # replace this pass (a do-nothing) statement with your code
+    for n in range(n,0,-1):
+        my_sum += n    
+    print(my_sum)
+     # replace this pass (a do-nothing) statement with your code
 
 
 
@@ -168,7 +174,7 @@ just one space or the auto-grader may not give you credit.
 """
 #%%
 def problem1_4(miles):
-    pass # replace this pass (a do-nothing) statement with your code
+    print("There are",5280*miles,"feet in",miles,"miles.") # replace this pass (a do-nothing) statement with your code
 
 
     
@@ -190,12 +196,14 @@ Also be careful to make the phrases exactly as shown for the auto-grader.
 """
 #%%
 def problem1_5(age):
-    pass # replace this pass (a do-nothing) statement with your code
+    if age<7:
+        print("Have a glass of milk.") 
+    elif age>=7 and age<21:
+        print("Have a coke.")
+    else:
+        print("Have a martini.")
+        # replace this pass (a do-nothing) statement with your code
 
-
-
-
-    
 #%%
 """
 Test runs (3 of them). Note that the grader program will use different numbers:
@@ -228,11 +236,8 @@ a loop.
 """
 #%%
 def problem1_6():
-    pass # replace this pass (a do-nothing) statement with your code
-
-
-
-    
+    for n in range(1,100,2):
+        print(n,end=" ")# replace this pass (a do-nothing) statement with your code
 #%% 
 """
 Test run (I've inserted a newline here to cause wrapping in the editor):
@@ -271,7 +276,15 @@ The area of a trapezoid with bases 3.0 and 4.0 and height 8.0 is 28.0
 """  
 #%%
 def problem1_7():
-    pass # replace this pass (a do-nothing) statement with your code
+    base1 = input("Enter the length of one of the bases: ")
+    base2 = input("Enter the length of the other base: ")
+    height = input("Enter the height: ")
+    b1 = float(base1)
+    b2 = float(base2)
+    h = float(height)
+    A = (1/2)*(b1+b2)*h
+    print("The area of a trapezoid with bases",b1,"and",b2,"and height",h,"is",A)
+    # replace this pass (a do-nothing) statement with your code
 
 
 
