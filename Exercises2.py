@@ -581,7 +581,18 @@ Solution:
 """
 #%%
 
-
+def dinner_waitress():
+    order=[]
+    print("Hello, I'll be your waitress. What will you have?")
+    while True:
+        take_order = input("menu item: ")
+        if take_order=="that's all":
+            break
+        else:
+            order.append(take_order)
+    print("You've ordered:")
+    print(order)
+        
 
 
 
