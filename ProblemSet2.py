@@ -159,8 +159,13 @@ import random
 
 def problem2_4():
     """ Make a list of 10 random reals between 30 and 35 """
-    random.seed()
-    pass # replace this pass (a do-nothing) statement with your code
+    random.seed(70)
+    list=[]
+    for i in range(0,10,1):
+        x = (random.random()*5)+30
+        list.append(x)
+    print(list)
+     # replace this pass (a do-nothing) statement with your code
 
 #%%
 """
