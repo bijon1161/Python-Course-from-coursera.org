@@ -314,7 +314,7 @@ midAtlantic = [["New York",19746227],["New Jersey",8938175],
 """
 Note that we don't use 19,746,227 as the population of New York. Why?
 """
-""" 
+"""  
 Another way to do it.
 """
 #%%
@@ -487,28 +487,17 @@ adverbs=["handily","sweetly","sourly","gingerly","forcefully","meekly"]
 articles=["a","the","that","this"]
 
 def simple_poem():
-    article = random.choice(articles)    
-    noun = random.choice(nouns)
-    verb = random.choice(verbs)
-    adverb = random.choice(adverbs)
-    
-    our_sentence = article + " " + noun + " " + verb + " " + adverb + "."
-    our_sentence = our_sentence.capitalize()
-    
-    print(our_sentence)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+      for i in range(0,4,1):
+        article = random.choice(articles)    
+        noun = random.choice(nouns)
+        verb = random.choice(verbs)
+        adverb = random.choice(adverbs)
+        
+        our_sentence = article + " " + noun + " " + verb + " " + adverb + "."
+        our_sentence = our_sentence.capitalize()
+        
+        print(our_sentence)
+
     
 #%%
 """
