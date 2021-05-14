@@ -137,7 +137,9 @@ newEngland = ["Maine","New Hampshire","Vermont", "Rhode Island",
 "Massachusetts","Connecticut"]
 
 def problem2_3(ne):
-    pass # replace this pass (a do-nothing) statement with your code
+    for i in range(0,len(ne)):
+        print(ne[i],"has",len(ne[i]),"letters.")
+    # replace this pass (a do-nothing) statement with your code
 
     
 #%%
