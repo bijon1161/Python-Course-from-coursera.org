@@ -334,9 +334,9 @@ def problem2_8(temp_list):
     sum_=0
     for i in range(0,len(temp_list)):
         sum_+= temp_list[i]
-    print("Average: ",sum_/len(temp_list))
-    print("High: ",max(temp_list))
-    print("Low: ",min(temp_list))
+    print("Average:",sum_/len(temp_list))
+    print("High:",max(temp_list))
+    print("Low:",min(temp_list))
     # replace this pass (a do-nothing) statement with your code
         
     
