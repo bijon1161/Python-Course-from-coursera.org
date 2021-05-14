@@ -219,7 +219,9 @@ def problem2_5():
     # Setting the seed makes the random numbers always the same
     # This is to make the auto-grader's job easier.
     random.seed(171)  # don't remove when you submit for grading
-    pass # replace this pass (a do-nothing) statement with your code
+    for i in range(0,10,1):
+        print(random.randint(1,6))
+    # replace this pass (a do-nothing) statement with your code
 
 #%%
 """
