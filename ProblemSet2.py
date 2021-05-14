@@ -331,7 +331,13 @@ hourly_temp = [40.0, 39.0, 37.0, 34.0, 33.0, 34.0, 36.0, 37.0, 38.0, 39.0, \
                36.0, 35.0, 33.0, 32.0]
 #%%
 def problem2_8(temp_list):
-    pass # replace this pass (a do-nothing) statement with your code
+    sum_=0
+    for i in range(0,len(temp_list)):
+        sum_+= temp_list[i]
+    print("Average: ",sum_/len(temp_list))
+    print("High: ",max(temp_list))
+    print("Low: ",min(temp_list))
+    # replace this pass (a do-nothing) statement with your code
         
     
 #%%
