@@ -304,7 +304,12 @@ Area of a triangle with sides 9.0 12.0 15.0 is 54.0
 
 def problem2_7():
     """ computes area of triangle using Heron's formula. """
-    pass # replace this pass (a do-nothing) statement with your code
+    a = float(input("Enter length of side one: "))
+    b = float(input("Enter length of side two: "))
+    c = float(input("Enter length of side three: "))
+    s= .5*(a+b+c)
+    print("Area of a triangle with sides",a,b,c,"is",(s*(s-a)*(s-b)*(s-c))**.5)
+    # replace this pass (a do-nothing) statement with your code
     
 #%%
 """ 
