@@ -256,7 +256,7 @@ outfile.close()
 #%%
 def print_file(filename):
     """ Opens file and prints its contents line by line. """
-    infile = open(filename)
+    infile = open(filename,"r")
     
     for line in infile:
         print(line, end="") # the file has "\n" at the end of each line already
@@ -265,7 +265,7 @@ def print_file(filename):
 #%%
 def copy_file(infilename, outfilename):
     """ Opens two files and copies one into the other line by line. """
-    infile = open(infilename)
+    infile = open(infilename,"r")
     outfile = open(outfilename,'w')
     
     for line in infile:
@@ -299,8 +299,11 @@ outline of what needs to be done is given as comments.
 """
 #%% 
 def write_to_file(filename, myname, myage, major):
-    # open file first
-    outfile.write("My name is "+ myname + " \n")
+    outfile = open(filename,'w')
+    outfile.write("My name is "+ myname +"\n")
+    outfile.write("My age is "+ str(myage) +"\n")
+    outfile.write("I am majoring in "+ major + "\n")
+    outfile.close()
     # write out the age and major in two lines
     # close the file
 
