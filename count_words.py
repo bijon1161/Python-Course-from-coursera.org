@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 15 14:56:53 2021
 
-@author: Admin
-"""
-
-# -count_words.py *- coding: utf-8 -*-
 import sys
 
 filename = sys.argv[1]
