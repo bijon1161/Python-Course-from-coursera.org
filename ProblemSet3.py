@@ -170,7 +170,9 @@ problem3_4("July",17, 2016)
 #%%
 def problem3_4(mon, day, year):
     """ Takes date such as July 17, 2016 and write it as 7/17/2016 """
-    pass # replace this pass (a do-nothing) statement with your code
+    months = {"January":1, "February":2, "March":3, "April":4, "May":5, "June":6, "July":7, "August":8, "September":9, "October":10, "November":11, "December":12}
+    print(str(months[mon])+"/"+str(day)+"/"+str(year))
+    # replace this pass (a do-nothing) statement with your code
 
 #%%
 """    
@@ -195,7 +197,8 @@ def problem3_5(name):
     
     phone_numbers = {"abbie":"(860) 123-4535", "beverly":"(901) 454-3241", \
                       "james": "(212) 567-8149", "thomas": "(795) 342-9145"}
-    pass # replace this pass (a do-nothing) statement with your code
+    print(phone_numbers[name])
+        # replace this pass (a do-nothing) statement with your code
 
 #%%
 """
