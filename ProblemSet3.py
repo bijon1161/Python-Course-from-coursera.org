@@ -75,7 +75,7 @@ def problem3_2(collection):
         for line in a:
             print(line)
     else:
-        for line in a.strip():
+        for line in a:
             print(line)
     # replace this pass (a do-nothing) statement with your code
 #%%
