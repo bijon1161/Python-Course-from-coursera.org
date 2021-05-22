@@ -34,7 +34,14 @@ There are 141 letters in the file.
 """
 #%%
 def problem3_1(txtfilename):
-    pass # replace this pass (a do-nothing) statement with your code
+    infile = open(txtfilename,'r')
+    ct=0
+    for line in infile:
+        ct += len(line)
+        print(line,end="")
+    print("\n")
+    print("There are",ct,"letters in the file.")
+    # replace this pass (a do-nothing) statement with your code
 
 #%%
 """ 
