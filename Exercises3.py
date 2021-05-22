@@ -690,17 +690,27 @@ so that each step is manageable and we don't get confused.
 Solution starter:
 """
 #%%
+import csv
 def name_phone(csv_filename):
     
-    # open the csv file here
+    
+    csvfile = open(csv_filename,'w',newline="") # open the csv file here
     
     while True:
         nextname = input("Enter a friend's name, press return to end: ")
         if nextname == "":
-            break              # break jumps out of the loop
+            break 
+        nextnum = input("Enter your friend's phone: ")             # break jumps out of the loop
         print(nextname) 
+        print(nextnum)
+        data =[]
+        data.append(nextname)
+        data.append(nextnum)
+        csv.writer(csvfile).writerow(row)
+    csvfile.close()
+            
         
-        # add lines here to build a row (that is, a list) and append these
+        # add lines here to build a row (that is, a list) and append these!
         # two pieces of data to it.  Write to the csv file
         
     # don't forget to close the csv file
