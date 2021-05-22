@@ -29,6 +29,7 @@ Humpty Dumpty had a great fall.
 All the king's horses and all the king's men
 Couldn't put Humpty together again.
 
+
 There are 141 letters in the file.
 
 """
@@ -66,7 +67,17 @@ str1 = "Rumplestilskin"             # string
 
 #%%
 def problem3_2(collection):
-    pass # replace this pass (a do-nothing) statement with your code
+    a = collection
+    if type(a)==list:
+        for line in a:
+            print(line)
+    elif type(a)==tuple:
+        for line in a:
+            print(line)
+    else:
+        for line in a.strip():
+            print(line)
+    # replace this pass (a do-nothing) statement with your code
 #%%
 """ 
 My runs 
