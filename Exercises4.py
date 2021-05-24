@@ -395,18 +395,14 @@ Solution:
 #%%
 def temp_stat(temps):
     """ prints the average, median, std dev, and variance of temps """
-    pass # replace this pass (a do-nothing) statement with your code
+    import statistics
+    print(temps)
+    print("Mean: ",statistics.mean(temps))
+    print("Median: ",statistics.median(temps))
+    print("Standard Deviation: ",statistics.stdev(temps))
+    print("Variance: ",statistics.variance(temps))
+    # replace this pass (a do-nothing) statement with your code
     
-
-
-
-
-
-
-
-
-
-
 
 #%%
 """
