@@ -443,7 +443,7 @@ def temp_stat(temps):
     print("Variance: ",statistics.variance(temps))
     try:
         print("Mode: ",statistics.mode(temps))
-    except statistics.StatisticsError as e:
+    except Exception as e:
         print("Mode: ",e)
     # replace this pass (a do-nothing) statement with your code
 
@@ -487,8 +487,8 @@ print("name: {0:>26}  age: {1:>4}   weight: {2:>10}".format(nam2,age,wt))
 # for the float (real number), allocate 5 spaces with 2 to the right of "."
 out3 = "name: {0:>26}  age: {1:>4}   weight: {2:>5.2f}"
 #%%
-print("name: {0:>26}  age: {1:>4}   weight: {2:>5.2f}".format(nam1,age,wt))
-print("name: {0:>26}  age: {1:>4}   weight: {2:>5.2f}".format(nam2,age,wt))
+print("name: {0:>26}  age: {1:>4}   weight: {2:>5.3f}".format(nam1,age,wt))
+print("name: {0:>26}  age: {1:>4}   weight: {2:>5.3f}".format(nam2,age,wt))
 #%%
 """
 Note: we can use the string variable out3 in the print statement:
@@ -539,7 +539,11 @@ Solution:
 """
 s = "hello, there"
 
-
+print("Start||{0}||End".format(s))
+print("Start||{0:25}||End".format(s))
+print("Start||{0:>25}||End".format(s))
+print("Start||{0:<25}||End".format(s))
+print("Start||{0:^25}||End".format(s))
 
 
 
