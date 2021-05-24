@@ -155,8 +155,13 @@ Solution:
 """  
 #%%
 
-
-
+import random
+def make_some_random_real():
+    reallis=[]
+    random.seed(17)
+    for i in range(0,10):
+        reallis.append(random.random())
+    return reallis
 
 
 
