@@ -84,6 +84,15 @@ def show_phones():
         show_phone(phone, index)
         index = index + 1
     print()
+def reorder_phones():
+    global phones 
+    show_phone(phone_header, "")
+    index = 1
+    SPhones = sorted(phones)
+    for phone in SPhones:
+        show_phone(phone, index)
+        index = index + 1
+    print()
 
 def show_phone(phone, index):
     outputstr = "{0:>3}  {1:<20}  {2:>16}"
@@ -100,12 +109,13 @@ def menu_choice():
     """ Find out what the user wants to do next. """
     print("Choose one of the following options?")
     print("   s) Show")
+    print("   r) Reorder")
     print("   n) New")
     print("   d) Delete")
     print("   e) Edit")
     print("   q) Quit")
     choice = input("Choice: ")    
-    if choice.lower() in ['n','d', 's','e', 'q']:
+    if choice.lower() in ['n','d', 's','e', 'q','r']:
         return choice.lower()
     else:
         print(choice +"?")
@@ -132,6 +142,8 @@ def main_loop():
             delete_phone(which)
         elif choice == 's':
             show_phones()
+        elif choice == 'r':
+            reorder_phones()
         elif choice == 'e':
             which = input("Which item do you want to edit? ")
             print("which is ", which)
