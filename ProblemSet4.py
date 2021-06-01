@@ -56,8 +56,11 @@ for i in range(0,25):
     numList.append(round(100*random.random(),1))
 #%%   
 def problem4_2(ran_list):
+    import statistics
     """ Compute the mean and standard deviation of a list of floats """
-    pass # replace this pass (a do-nothing) statement with your code
+    print(statistics.mean(ran_list))
+    print(statistics.stdev(ran_list))
+    # replace this pass (a do-nothing) statement with your code
 #%%
 """
 Problem 4_3:
